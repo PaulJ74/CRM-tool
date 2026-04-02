@@ -87,12 +87,6 @@ const DEFAULT_USERS = [
 ];
 
 // ─── Storage helpers ──────────────────────────────────────────────────────────
-async function storeGet(key,shared=false){
-  try{const r=await window.storage.get(key,shared);return r?JSON.parse(r.value):null;}catch{return null;}
-}
-async function storeSet(key,val,shared=false){
-  try{await window.storage.set(key,JSON.stringify(val),shared);}catch(e){console.error("store error",e);}
-}
 
 // ─── App Root ─────────────────────────────────────────────────────────────────
 export default function App(){
