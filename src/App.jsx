@@ -21,12 +21,6 @@ async function supabaseFetch(method, path, body) {
   if (!res.ok) throw new Error(await res.text());
   return res.json();
 }
-async function storeGet(key) {
-  try {
-    const rows = await supabaseFetch("GET", `crm_store?key=eq.${encodeURIComponent(key)}&select=value`);
-    return rows?.length ? JSON.parse(rows[0].value) : null;
-  } catch { return null; }
-}
 async function storeSet(key, val) {
   try { await supabaseFetch("POST", "crm_store", { key, value: JSON.stringify(val) }); }
   catch (e) { console.error("storeSet error", e); }
