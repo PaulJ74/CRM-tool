@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 
 // ─── Supabase credentials (set these in Replit Secrets, not here) ─────────────
-const SUPABASE_URL = https://kctggobobhxncxxdtyhx.supabase.co
+const SUPABASE_URL = "https://kctggobobhxncxxdtyhx.supabase.co"
 const SUPABASE_ANON_KEY = "sb_publishable_3lLVFnPUrOk9athz4b8Eig_buCVyiKy";
 
 // ─── Supabase storage layer ───────────────────────────────────────────────────
