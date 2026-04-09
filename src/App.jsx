@@ -1,8 +1,8 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 
 // ─── Supabase credentials (set these in Replit Secrets, not here) ─────────────
-const SUPABASE_URL = "sb_publishable_3lLVFnPUrOk9athz4b8Eig_buCVyiKy";
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtjdGdnb2JvYmh4bmN4eGR0eWh4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUwMzc4NjgsImV4cCI6MjA5MDYxMzg2OH0.eIEwUAk1FBjETuj64bt_dedPMgl1Km0G5UbJ4tdnpEk";
+const SUPABASE_URL = https://kctggobobhxncxxdtyhx.supabase.co
+const SUPABASE_ANON_KEY = "sb_publishable_3lLVFnPUrOk9athz4b8Eig_buCVyiKy";
 
 // ─── Supabase storage layer ───────────────────────────────────────────────────
 async function supabaseFetch(method, path, body) {
