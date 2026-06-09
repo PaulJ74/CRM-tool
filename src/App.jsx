@@ -1,8 +1,8 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 
 // ─── Supabase credentials (set these in Replit Secrets, not here) ─────────────
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || "";
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || "";
+const SUPABASE_URL = "https://kctggobobhxncxxdtyhx.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_3lLVFnPUr0k9athz4b8Eig_buCVyiKy...";
 
 // ─── Supabase storage layer ───────────────────────────────────────────────────
 async function supabaseFetch(method, path, body) {
